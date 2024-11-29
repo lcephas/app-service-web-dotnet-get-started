@@ -10,8 +10,8 @@ namespace aspnet_get_started.Controllers
     {
         public ActionResult Index()
         {
-            return View();
             ViewData["Foo"] = "test";//System.Configuration.ConfigurationManager.AppSettings["APPLICATIONINSIGHTS_CONNECTION_STRING"];
+            return View();
         }
 
         public ActionResult About()
