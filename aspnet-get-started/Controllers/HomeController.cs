@@ -10,7 +10,7 @@ namespace aspnet_get_started.Controllers
     {
         public ActionResult Index()
         {
-            ViewData["Foo"] = System.Configuration.ConfigurationManager.AppSettings["ApplicationInsightsAgent_EXTENSION_VERSION"];
+            ViewData["Foo"] = System.Configuration.ConfigurationManager.ConnectionStrings["TESTEEE"];
             return View();
         }
 
